@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      "@lds/eden-list@3.0.9",
+      "C:\\Users\\apex2060\\DEV\\react-page-renderer"
+    ]
+  ],
+  "_from": "@lds/eden-list@3.0.9",
+  "_id": "@lds/eden-list@3.0.9",
+  "_inBundle": false,
+  "_integrity": "sha1-yiFaWxmOw2rxF2xjDhtmbX6uoMQ=",
+  "_location": "/@lds/eden-list",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@lds/eden-list@3.0.9",
+    "name": "@lds/eden-list",
+    "escapedName": "@lds%2feden-list",
+    "scope": "@lds",
+    "rawSpec": "3.0.9",
+    "saveSpec": null,
+    "fetchSpec": "3.0.9"
+  },
+  "_requiredBy": [
+    "/@lds/react-html-fragment"
+  ],
+  "_resolved": "http://code.ldschurch.org/artifactory/api/npm/npm-ics/@lds%2feden-list/-/eden-list-3.0.9.tgz",
+  "_spec": "3.0.9",
+  "_where": "C:\\Users\\apex2060\\DEV\\react-page-renderer",
+  "author": "",
+  "dependencies": {
+    "@lds/eden-style-constants": "^5.1.6",
+    "prop-types": "^15.6.2"
+  },
+  "description": "Displays lists of items",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@storybook/react": "^4.0.4"
+  },
+  "gitHead": "60a795662839092af199d2bbd45b848ed80c95e7",
+  "keywords": [],
+  "license": "LDS Church",
+  "main": "lib/cjs/index.js",
+  "module": "lib/es/index.js",
+  "name": "@lds/eden-list",
+  "peerDependencies": {
+    "react": ">15.0.0",
+    "react-dom": ">15.0.0",
+    "styled-components": ">=2"
+  },
+  "scripts": {
+    "build": "npm run build:cjs & npm run build:es",
+    "build:cjs": "BABEL_ENV=cjs babel --root-mode upward src --out-dir lib/cjs",
+    "build:es": "BABEL_ENV=es babel --root-mode upward src --out-dir lib/es",
+    "build:storybook:static": "build-storybook",
+    "clean": "rm -rf lib",
+    "storybook": "start-storybook -p 9003",
+    "watch:build": "npm run watch:build:cjs & npm run watch:build:es",
+    "watch:build:cjs": "npm run build:cjs -- --watch",
+    "watch:build:es": "npm run build:es -- --watch"
+  },
+  "version": "3.0.9"
+}
